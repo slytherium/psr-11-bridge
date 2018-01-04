@@ -7,7 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Use [PSR-11](http://www.php-fig.org/psr/psr-11) packages to [Zapheus](https://github.com/zapheus/zapheus).
+Enables the use [PSR-11](http://www.php-fig.org/psr/psr-11) packages to [Zapheus](https://github.com/zapheus/zapheus).
 
 ## Install
 
