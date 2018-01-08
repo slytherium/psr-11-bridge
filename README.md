@@ -1,4 +1,4 @@
-# Zapheus PSR-11 Bridge
+# PSR-11 <-> Zapheus Container Bridge
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -7,7 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Enables the use [PSR-11](http://www.php-fig.org/psr/psr-11) packages to [Zapheus](https://github.com/zapheus/zapheus).
+Converts [PSR-11](http://www.php-fig.org/psr/psr-11) containers to [Zapheus](https://github.com/zapheus/zapheus) containers and vice versa. Also contains an implementation of [PSR-11](http://www.php-fig.org/psr/psr-11).
 
 ## Install
 
@@ -19,12 +19,36 @@ $ composer require zapheus/psr-11-bridge
 
 ## Usage
 
+### PSR-11 to Zapheus
+
+Install a PSR-11 compliant package first (e.g [League Container](http://container.thephpleague.com)):
+
+``` bash
+$ composer require league/container
+```
+
 ``` php
-use Zapheus\Bridge\Psr\Container;
+use Zapheus\Bridge\Psr\ZapheusContainer;
 
-$psr = new League\Container\Container;
+$psr = League\Container\Container;
 
-$container = new Container($psr);
+// ... set dependencies here
+
+// Zapheus\Container\ContainerInterface
+$container = new ZapheusContainer($psr);
+```
+
+### Zapheus to PSR-11
+
+``` php
+use Zapheus\Bridge\Psr\InteropContainer;
+
+$zapheus = new Zapheus\Container\Container;
+
+// ... set dependencies here
+
+// Psr\Container\ContainerInterface
+$container = new InteropContainer($zapheus);
 ```
 
 ## Change log
