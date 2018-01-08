@@ -1,6 +1,6 @@
 {
     "name": "zapheus/psr-11-bridge",
-    "description": "Use PSR-11 packages for Zapheus",
+    "description": "Converts PSR-11 to Zapheus container and vice versa.",
     "keywords": ["container", "psr-11", "zapheus"],
     "homepage": "https://github.com/zapheus/psr-11-bridge",
     "license": "MIT",
