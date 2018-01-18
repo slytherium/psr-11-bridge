@@ -30,7 +30,7 @@ $ composer require league/container
 ``` php
 use Zapheus\Bridge\Psr\ZapheusContainer;
 
-$psr = League\Container\Container;
+$psr = new League\Container\Container;
 
 // ... set dependencies here
 

@@ -10,6 +10,6 @@ use Psr\Container\ContainerExceptionInterface;
  * @package Zapheus
  * @author  Rougin Royce Gutib <rougingutib@gmail.com>
  */
-class ContainerException extends \InvalidArgumentException implements ContainerExceptionInterface
+class ContainerException extends \Exception implements ContainerExceptionInterface
 {
 }
