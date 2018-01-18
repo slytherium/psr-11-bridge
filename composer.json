@@ -1,7 +1,7 @@
 {
     "name": "zapheus/psr-11-bridge",
-    "description": "Converts PSR-11 to Zapheus container and vice versa.",
-    "keywords": ["container", "psr-11", "zapheus"],
+    "description": "PSR-11 bridge for Zapheus framework.",
+    "keywords": ["bridge", "container", "psr-11", "zapheus"],
     "homepage": "https://github.com/zapheus/psr-11-bridge",
     "license": "MIT",
     "authors": [

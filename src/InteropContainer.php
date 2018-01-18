@@ -27,4 +27,18 @@ class InteropContainer extends AbstractContainer implements PsrContainerInterfac
     {
         $this->container = $container;
     }
+
+    /**
+     * Calls methods from \Zapheus\Container\Container.
+     *
+     * @param  string $method
+     * @param  mixed  $parameters
+     * @return mixed
+     */
+    public function __call($method, $parameters)
+    {
+        $instance = array($this->container, $method);
+
+        return call_user_func_array($instance, $parameters);
+    }
 }

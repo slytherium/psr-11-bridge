@@ -1,4 +1,4 @@
-# PSR-11 <-> Zapheus Container Bridge
+# PSR-11 Bridge
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
