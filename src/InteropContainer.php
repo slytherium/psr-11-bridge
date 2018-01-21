@@ -14,11 +14,6 @@ use Zapheus\Container\ContainerInterface;
 class InteropContainer extends AbstractContainer implements PsrContainerInterface
 {
     /**
-     * @var \Zapheus\Container\ContainerInterface
-     */
-    protected $container;
-
-    /**
      * Initializes the container instance.
      *
      * @param \Zapheus\Container\ContainerInterface $container

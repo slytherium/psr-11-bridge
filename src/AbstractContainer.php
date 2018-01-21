@@ -11,6 +11,11 @@ namespace Zapheus\Bridge\Psr;
 abstract class AbstractContainer
 {
     /**
+     * @var \Psr\Container\ContainerInterface|\Zapheus\Container\ContainerInterface
+     */
+    protected $container;
+
+    /**
      * Finds an entry of the container by its identifier and returns it.
      *
      * @param  string $id
