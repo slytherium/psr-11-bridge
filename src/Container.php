@@ -3,7 +3,7 @@
 namespace Zapheus\Bridge\Psr;
 
 use Psr\Container\ContainerInterface;
-use Zapheus\Container\Container as ZapheusContainer;
+use Zapheus\Container\Container as BaseContainer;
 
 /**
  * Container
@@ -11,6 +11,6 @@ use Zapheus\Container\Container as ZapheusContainer;
  * @package Zapheus
  * @author  Rougin Royce Gutib <rougingutib@gmail.com>
  */
-class Container extends ZapheusContainer implements ContainerInterface
+class Container extends BaseContainer implements ContainerInterface
 {
 }
