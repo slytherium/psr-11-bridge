@@ -1,8 +1,9 @@
 <?php
 
-namespace Zapheus\Bridge\Psr;
+namespace Zapheus\Bridge\Psr\Interop;
 
 use Psr\Container\ContainerInterface as PsrContainerInterface;
+use Zapheus\Bridge\Psr\AbstractContainer;
 use Zapheus\Container\ContainerInterface;
 
 /**
@@ -11,8 +12,13 @@ use Zapheus\Container\ContainerInterface;
  * @package Zapheus
  * @author  Rougin Royce Gutib <rougingutib@gmail.com>
  */
-class InteropContainer extends AbstractContainer implements PsrContainerInterface
+class Container extends AbstractContainer implements PsrContainerInterface
 {
+    /**
+     * @var \Zapheus\Container\ContainerInterface
+     */
+    protected $container;
+
     /**
      * Initializes the container instance.
      *
@@ -21,19 +27,5 @@ class InteropContainer extends AbstractContainer implements PsrContainerInterfac
     public function __construct(ContainerInterface $container)
     {
         $this->container = $container;
-    }
-
-    /**
-     * Calls methods from \Zapheus\Container\Container.
-     *
-     * @param  string $method
-     * @param  mixed  $parameters
-     * @return mixed
-     */
-    public function __call($method, $parameters)
-    {
-        $instance = array($this->container, $method);
-
-        return call_user_func_array($instance, $parameters);
     }
 }

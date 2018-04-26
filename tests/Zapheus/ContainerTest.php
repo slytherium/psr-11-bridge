@@ -1,9 +1,10 @@
 <?php
 
-namespace Zapheus\Bridge\Psr;
+namespace Zapheus\Bridge\Psr\Zapheus;
 
 use Zapheus\Bridge\Psr\Fixture\FoodController;
 use Zapheus\Bridge\Psr\Fixture\TestController;
+use Zapheus\Bridge\Psr\Container as InteropContainer;
 
 /**
  * Zapheus Container Test
@@ -11,7 +12,7 @@ use Zapheus\Bridge\Psr\Fixture\TestController;
  * @package Zapheus
  * @author  Rougin Royce Gutib <rougingutib@gmail.com>
  */
-class ZapheusContainerTest extends \PHPUnit_Framework_TestCase
+class ContainerTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var \Zapheus\Container\ContainerInterface
@@ -25,11 +26,11 @@ class ZapheusContainerTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $container = new Container;
+        $container = new InteropContainer;
 
         $container->set('food', new FoodController);
 
-        $this->container = new ZapheusContainer($container);
+        $this->container = new Container($container);
     }
 
     /**
