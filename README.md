@@ -28,27 +28,27 @@ $ composer require league/container
 ```
 
 ``` php
-use Zapheus\Bridge\Psr\ZapheusContainer;
+use Zapheus\Bridge\Psr\Zapheus\Container;
 
 $psr = new League\Container\Container;
 
 // ... set dependencies here
 
 // Zapheus\Container\ContainerInterface
-$container = new ZapheusContainer($psr);
+$container = new Container($psr);
 ```
 
 ### Zapheus to PSR-11
 
 ``` php
-use Zapheus\Bridge\Psr\InteropContainer;
+use Zapheus\Bridge\Psr\Interop\Container;
 
 $zapheus = new Zapheus\Container\Container;
 
 // ... set dependencies here
 
 // Psr\Container\ContainerInterface
-$container = new InteropContainer($zapheus);
+$container = new Container($zapheus);
 ```
 
 ## Change log
