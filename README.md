@@ -1,7 +1,7 @@
 # PSR-11 Bridge
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
+[![Software License][ico-license]][link-license]
 [![Build Status][ico-travis]][link-travis]
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
@@ -9,15 +9,15 @@
 
 Converts [PSR-11](http://www.php-fig.org/psr/psr-11) containers to [Zapheus](https://github.com/zapheus/zapheus) containers and vice versa. Also contains an implementation of [PSR-11](http://www.php-fig.org/psr/psr-11).
 
-## Install
+## Installation
 
-Via Composer
+Install `PSR-11 Bridge` via [Composer](https://getcomposer.org/):
 
 ``` bash
 $ composer require zapheus/psr-11-bridge
 ```
 
-## Usage
+## Basic Usage
 
 ### PSR-11 to Zapheus
 
@@ -51,9 +51,9 @@ $zapheus = new Zapheus\Container\Container;
 $container = new Container($zapheus);
 ```
 
-## Change log
+## Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+Please see [CHANGELOG][link-changelog] for more information what has changed recently.
 
 ## Testing
 
@@ -61,30 +61,26 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 $ composer test
 ```
 
-## Security
-
-If you discover any security related issues, please email rougingutib@gmail.com instead of using the issue tracker.
-
 ## Credits
 
-- [Rougin Royce Gutib][link-author]
-- [All Contributors][link-contributors]
+- [All contributors][link-contributors]
 
 ## License
 
-The MIT License (MIT). Please see [LICENSE.md](LICENSE.md) for more information.
+The MIT License (MIT). Please see [LICENSE][link-license] for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/zapheus/psr-11-bridge.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/zapheus/psr-11-bridge/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/zapheus/psr-11-bridge.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/zapheus/psr-11-bridge.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/zapheus/psr-11-bridge.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/zapheus/psr-11-bridge.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/zapheus/psr-11-bridge/master.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/zapheus/psr-11-bridge.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/zapheus/psr-11-bridge
-[link-travis]: https://travis-ci.org/zapheus/psr-11-bridge
-[link-scrutinizer]: https://scrutinizer-ci.com/g/zapheus/psr-11-bridge/code-structure
+[link-changelog]: https://github.com/zapheus/psr-11-bridge/blob/master/CHANGELOG.md
 [link-code-quality]: https://scrutinizer-ci.com/g/zapheus/psr-11-bridge
+[link-contributors]: https://github.com/zapheus/psr-11-bridge/contributors
 [link-downloads]: https://packagist.org/packages/zapheus/psr-11-bridge
-[link-author]: https://github.com/rougin
-[link-contributors]: ../../contributors
+[link-license]: https://github.com/zapheus/psr-11-bridge/blob/master/LICENSE.md
+[link-packagist]: https://packagist.org/packages/zapheus/psr-11-bridge
+[link-scrutinizer]: https://scrutinizer-ci.com/g/zapheus/psr-11-bridge/code-structure
+[link-travis]: https://travis-ci.org/zapheus/psr-11-bridge
