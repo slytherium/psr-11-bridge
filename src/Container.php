@@ -9,7 +9,7 @@ use Zapheus\Container\Container as BaseContainer;
  * Container
  *
  * @package Zapheus
- * @author  Rougin Royce Gutib <rougingutib@gmail.com>
+ * @author  Rougin Gutib <rougingutib@gmail.com>
  */
 class Container extends BaseContainer implements ContainerInterface
 {
