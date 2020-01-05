@@ -8,7 +8,7 @@ use Psr\Container\ContainerExceptionInterface;
  * Not Found Exception
  *
  * @package Zapheus
- * @author  Rougin Royce Gutib <rougingutib@gmail.com>
+ * @author  Rougin Gutib <rougingutib@gmail.com>
  */
 class ContainerException extends \Exception implements ContainerExceptionInterface
 {
