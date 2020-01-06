@@ -10,7 +10,7 @@ use Zapheus\Container\ContainerInterface;
  * Zapheus to PSR-11 Container Bridge
  *
  * @package Zapheus
- * @author  Rougin Royce Gutib <rougingutib@gmail.com>
+ * @author  Rougin Gutib <rougingutib@gmail.com>
  */
 class Container extends ZapheusContainer implements PsrContainerInterface
 {
