@@ -10,7 +10,7 @@ use Zapheus\Container\Container as ZapheusContainer;
  * PSR-11 Container Test
  *
  * @package Zapheus
- * @author  Rougin Royce Gutib <rougingutib@gmail.com>
+ * @author  Rougin Gutib <rougingutib@gmail.com>
  */
 class ContainerTest extends \PHPUnit_Framework_TestCase
 {
